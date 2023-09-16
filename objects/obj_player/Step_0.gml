@@ -53,19 +53,20 @@ if (_key_down) {
 }
 
 
-// Take care of block stepping and breaking
-var _last_stepped_block = stepped_on_block;
-var potential_step_blocks = ds_list_create()
-var _num_potential_step_blocks = instance_place_list(x, y+1, obj_block, potential_step_blocks, true)
-if (!ds_list_find_index(potential_step_blocks, stepped_on_block)) {
-	stepped_on_block = potential_step_blocks[| 0]
-}
+//// Take care of block stepping and breaking
+//var _last_stepped_block = stepped_on_block;
+//var potential_step_blocks = ds_list_create()
+//var _num_potential_step_blocks = instance_place_list(x, y+1, obj_block, potential_step_blocks, true)
+//if (!ds_list_find_index(potential_step_blocks, stepped_on_block)) {
+//	stepped_on_block = potential_step_blocks[| 0]
+//}
 
-if (_last_stepped_block != noone && _last_stepped_block != stepped_on_block) {
-	if (instance_exists(_last_stepped_block)) {
-		_last_stepped_block.durability -= 1;
-		if (_last_stepped_block.durability <= 0) {
-			instance_destroy(_last_stepped_block)	
-		}
-	}
-}
+//if (_last_stepped_block != noone && _last_stepped_block != stepped_on_block) {
+//	if (instance_exists(_last_stepped_block)) {
+//		_last_stepped_block.slimed = true;
+//	}
+//}
+
+
+image_xscale = jelly_quantity
+image_yscale = jelly_quantity

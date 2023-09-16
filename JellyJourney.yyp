@@ -36,6 +36,7 @@
   "resources": [
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"spr_eggshell","path":"sprites/spr_eggshell/spr_eggshell.yy",},},
+    {"id":{"name":"spr_block_slime","path":"sprites/spr_block_slime/spr_block_slime.yy",},},
     {"id":{"name":"Sequence1","path":"sequences/Sequence1/Sequence1.yy",},},
     {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},},
     {"id":{"name":"obj_eggshell","path":"objects/obj_eggshell/obj_eggshell.yy",},},
