@@ -29,30 +29,31 @@ if (place_meeting(x,y+vsp,obj_block)) {
 		}
 	}
 	vsp = 0;
-	can_jump = true;
 }
 y = y + vsp;
 
+// Allow jumping slightly after leaving a platform
+if (place_meeting(x,y+1,obj_block)) {
+	can_jump = true;
+	fall_time = 0;
+} else {
+	fall_time += 1;
+	if (fall_time > 5) {
+		can_jump = false;
+	}
+}
 
-// This does not take into account things other than you jumping
-// eg a spring that is launching you
 if (_key_up) {
 	if (can_jump) {
 		can_jump = false;
 		vsp -= jump_speed;
 	}
 } else {
-	if (vsp < 0) vsp = max(vsp, -jump_speed/3)
-}
-
-if (_key_down) {
-	if (can_jump) {
-		can_jump = false;
-		vsp -= 1;
-	}
+	if (vsp < 0) vsp = max(vsp, -2)
 }
 
 
+// This was for eggshell game
 //// Take care of block stepping and breaking
 //var _last_stepped_block = stepped_on_block;
 //var potential_step_blocks = ds_list_create()
@@ -68,5 +69,22 @@ if (_key_down) {
 //}
 
 
+// I can't decide if we want to have a ton of blocks in this game 
+// or just a few that are stretched out to make the level
+// I suppose for level editor it would be simpler to have a block for each space
+// Here is one way that could happen, but I don't know if I like it
+var _step_blocks = ds_list_create()
+var num_touched_blocks = instance_place_list(x, y+1, obj_block, _step_blocks, true)
+for (var i = 0; i < ds_list_size(_step_blocks); ++i) {
+	if (!_step_blocks[| i].slimed) {
+    _step_blocks[| i].slimed = true;
+		jelly_quantity -= 0.1
+	}
+}
+
 image_xscale = jelly_quantity
 image_yscale = jelly_quantity
+
+if (jelly_quantity <= 0) {
+	// You die	
+}

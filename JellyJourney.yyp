@@ -31,19 +31,18 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.0.98",
+    "IDEVersion": "2023.8.1.102",
   },
   "resources": [
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"spr_eggshell","path":"sprites/spr_eggshell/spr_eggshell.yy",},},
     {"id":{"name":"spr_block_slime","path":"sprites/spr_block_slime/spr_block_slime.yy",},},
     {"id":{"name":"Sequence1","path":"sequences/Sequence1/Sequence1.yy",},},
-    {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},},
-    {"id":{"name":"obj_eggshell","path":"objects/obj_eggshell/obj_eggshell.yy",},},
+    {"id":{"name":"spr_extra_jelly","path":"sprites/spr_extra_jelly/spr_extra_jelly.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
     {"id":{"name":"obj_game_controller","path":"objects/obj_game_controller/obj_game_controller.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"obj_jelly","path":"objects/obj_jelly/obj_jelly.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

@@ -17,12 +17,11 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"spr_eggshell","order":2,"path":"sprites/spr_eggshell/spr_eggshell.yy",},
     {"name":"spr_block_slime","order":4,"path":"sprites/spr_block_slime/spr_block_slime.yy",},
-    {"name":"spr_test","order":3,"path":"sprites/spr_test/spr_test.yy",},
-    {"name":"obj_eggshell","order":3,"path":"objects/obj_eggshell/obj_eggshell.yy",},
+    {"name":"spr_extra_jelly","order":5,"path":"sprites/spr_extra_jelly/spr_extra_jelly.yy",},
     {"name":"obj_block","order":1,"path":"objects/obj_block/obj_block.yy",},
     {"name":"obj_game_controller","order":2,"path":"objects/obj_game_controller/obj_game_controller.yy",},
     {"name":"spr_block","order":1,"path":"sprites/spr_block/spr_block.yy",},
+    {"name":"obj_jelly","order":3,"path":"objects/obj_jelly/obj_jelly.yy",},
   ],
 }
